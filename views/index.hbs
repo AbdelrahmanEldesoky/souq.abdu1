@@ -1,0 +1,27 @@
+{{#each products }}
+<div class="row">
+  {{#each this}}
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+  <img src="{{this.imgPath}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{this.productName}}</h5>
+    <p class="card-text">
+        MEMORY Internal	: <br>
+        BODY SIM :  <br>
+        PLATFORM OS	 :  <br>
+    </p>
+    <div>
+        <div class="price float-left">{{this.price}} </div>
+    <a href="#" class="btn btn-success float-right">Buy</a>
+    </div>
+  </div>
+</div>
+    </div>
+  {{/each}}
+</div>
+  
+{{/each}}
+
+
+
